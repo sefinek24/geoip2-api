@@ -3,8 +3,14 @@
   "version": "0.1.0",
   "description": "This module enables you to retrieve the customer's geolocation using their IP address, utilizing data obtained from an official and high-speed API.",
   "keywords": [
+    "geo-api",
+    "geo-wrapper",
     "geoip",
-    "geoip-api"
+    "geoip-api",
+    "geoip-api-wrapper",
+    "geoip-data",
+    "geoip-wrapper",
+    "maxmind-wrapper"
   ],
   "homepage": "https://github.com/sefinek24/geoip2-api#readme",
   "bugs": {

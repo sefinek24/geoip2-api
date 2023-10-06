@@ -8,26 +8,22 @@
 </a>
 
 
-# 📥 Installation
-```bash
-npm install geoip2-api
-```
-
-
 # 📝 Information
 This documentation provides information about the lightweight Node.js module designed for sending requests to a geolocation data API. This module enables you to retrieve location information for a specified IP address and takes full advantage of native modules. The [official API](https://api.sefinek.net/docs/v2) is thoroughly optimized and secure.
 
 > We use the [MaxMind](https://www.maxmind.com) database, which is automatically updated daily.
 
 
-# 🤔 Importing
-```js
-const geoIp = require('geoip2-api');
+# 📥 Installation
+```bash
+npm install geoip2-api
 ```
 
 
 # 😎 Usage
 ```js
+const geoIp = require('geoip2-api');
+
 const data = await geoIp.get('109.207.159.255');
 console.log(data);
 ```
