@@ -1,18 +1,18 @@
 {
-  "name": "geolite2-api",
+  "name": "geoip2-api",
   "version": "0.1.0",
   "description": "This module enables you to retrieve the customer's geolocation using their IP address, utilizing data obtained from an official and high-speed API.",
   "keywords": [
     "geoip",
     "geoip-api"
   ],
-  "homepage": "https://github.com/sefinek24/geolite2-api#readme",
+  "homepage": "https://github.com/sefinek24/geoip2-api#readme",
   "bugs": {
-    "url": "https://github.com/sefinek24/geolite2-api/issues"
+    "url": "https://github.com/sefinek24/geoip2-api/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sefinek24/geolite2-api.git"
+    "url": "git+https://github.com/sefinek24/geoip2-api.git"
   },
   "license": "MIT",
   "author": "Sefinek <contact@sefinek.net> (https://sefinek.net)",

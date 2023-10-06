@@ -1,4 +1,4 @@
-declare module 'geolite2-api' {
+declare module 'geoip2-api' {
     export interface GeoIpData {
         range: [number, number];
         country: string;

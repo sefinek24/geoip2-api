@@ -1,16 +1,16 @@
 # 🗺️ GeoIP API Wrapper
-<a href="https://www.npmjs.com/package/geolite2-api" target="_blank" title="geolite2-api - npm" style="text-decoration:none">
-    <img src="https://img.shields.io/npm/dt/geolite2-api?maxAge=3600" alt="The number of downloads">
-    <img src="https://img.shields.io/github/last-commit/sefinek24/geolite2-api" alt="Last commit">
-    <img src="https://img.shields.io/github/issues/sefinek24/geolite2-api" alt="Issues">
-    <img src="https://img.shields.io/github/commit-activity/w/sefinek24/geolite2-api" alt="Commit activity">
-    <img src="https://img.shields.io/github/languages/code-size/sefinek24/geolite2-api" alt="Code size">
+<a href="https://www.npmjs.com/package/geoip2-api" target="_blank" title="geoip2-api - npm" style="text-decoration:none">
+    <img src="https://img.shields.io/npm/dt/geoip2-api?maxAge=3600" alt="The number of downloads">
+    <img src="https://img.shields.io/github/last-commit/sefinek24/geoip2-api" alt="Last commit">
+    <img src="https://img.shields.io/github/issues/sefinek24/geoip2-api" alt="Issues">
+    <img src="https://img.shields.io/github/commit-activity/w/sefinek24/geoip2-api" alt="Commit activity">
+    <img src="https://img.shields.io/github/languages/code-size/sefinek24/geoip2-api" alt="Code size">
 </a>
 
 
 # 📥 Installation
 ```bash
-npm install geolite2-api
+npm install geoip2-api
 ```
 
 
@@ -20,7 +20,7 @@ This documentation provides information about the lightweight Node.js module des
 
 # 🤔 Importing
 ```js
-const geoIp = require('geolite2-api');
+const geoIp = require('geoip2-api');
 ```
 
 
@@ -34,6 +34,6 @@ console.log(data);
 # 🔑 License MIT
 This GeoIP API client script is provided under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-For any questions or issues related to the script, please visit the [GitHub repository](https://github.com/sefinek24/geolite2-api) for the latest updates and support.
+For any questions or issues related to the script, please visit the [GitHub repository](https://github.com/sefinek24/geoip2-api) for the latest updates and support.
 
 Copyright 2023 © by [Sefinek](https://sefinek.net). All Rights Reserved.

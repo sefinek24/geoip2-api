@@ -7,7 +7,7 @@ const API_PATH = '/api/v2/geoip/';
 
 // Define the headers for the HTTP request.
 const headers = {
-	'User-Agent': `${name}/${version} (+https://github.com/sefinek24/geolite2-api)`,
+	'User-Agent': `${name}/${version} (+https://github.com/sefinek24/geoip2-api)`,
 	'Accept': 'application/json',
 	'Accept-Language': 'en-US,en;q=0.9',
 	'Cache-Control': 'no-cache',
