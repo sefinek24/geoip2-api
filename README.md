@@ -14,6 +14,12 @@ This documentation provides information about the lightweight Node.js module des
 > We use the [MaxMind](https://www.maxmind.com) database, which is automatically updated daily.
 
 
+# 💻 Locally
+There is an alternative to this module that allows for local geolocation retrieval based on a specific IP address. However, this will increase the memory usage because the alternative module stores the MaxMind database in RAM.
+
+> https://www.npmjs.com/package/geoip-lite2
+
+
 # 📥 Installation
 ```bash
 npm install geoip2-api
