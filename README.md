@@ -27,14 +27,37 @@ npm install geoip2-api
 
 ## 😎 Usage
 ```js
-const geoIp = require('geoip2-api');
+const geoIp = require("geoip2-api");
 
-const data = await geoIp.get('109.207.159.255');
+const data = await geoIp.get("185.244.214.231");
 console.log(data);
 ```
 <div align="center">
     <a href="example.js">Open example.js >></a>
 </div>
+
+
+## ✨ Output
+```json
+{
+  "success": true,
+  "status": 200,
+  "validationErr": false,
+  "message": "Found",
+  "ip": "185.244.214.231",
+  "data": {
+    "range": [ 3119830528, 3119830783 ],
+    "country": "PL",
+    "region": "14",
+    "eu": "1",
+    "timezone": "Europe/Warsaw",
+    "city": "Warsaw",
+    "ll": [ 52.1574, 21.0126 ],
+    "metro": 0,
+    "area": 20
+  }
+}
+```
 
 
 ## 💙 Support
