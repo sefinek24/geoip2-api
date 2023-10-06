@@ -31,6 +31,7 @@ const geoIp = require('geoip2-api');
 const data = await geoIp.get('109.207.159.255');
 console.log(data);
 ```
+> [[Full example]](example.js)
 
 
 # 🔑 License MIT
