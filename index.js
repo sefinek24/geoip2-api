@@ -1,8 +1,11 @@
 const https = require('node:https');
 const { name, version } = require('./package.json');
 
+// Define the base URL and API path for the GeoIP service.
 const API_BASE_URL = 'api.sefinek.net';
 const API_PATH = '/api/v2/geoip/';
+
+// Define the headers for the HTTP request.
 const headers = {
 	'User-Agent': `${name}/${version} (+https://github.com/sefinek24/geolite2-api)`,
 	'Accept': 'application/json',
@@ -14,42 +17,47 @@ const headers = {
 	'Upgrade-Insecure-Requests': '1',
 };
 
-module.exports = {
-	get: ip => {
-		return new Promise((resolve, reject) => {
-			const options = {
-				hostname: API_BASE_URL,
-				path: API_PATH + ip,
-				method: 'GET',
-				headers,
-			};
+/**
+ * Function to make a GeoIP API request.
+ *
+ * @param {string} ip - The IP address for which to retrieve location information.
+ * @returns {Promise<Object>} - A promise that resolves to the location data or rejects with an error.
+ */
+function makeRequest(ip) {
+	return new Promise((resolve, reject) => {
+		const options = {
+			hostname: API_BASE_URL,
+			path: API_PATH + ip,
+			method: 'GET',
+			headers,
+		};
 
-			const req = https.request(options, res => {
-				let data = '';
+		const req = https.request(options, res => {
+			let data = '';
 
-				res.on('data', chunk => {
-					data += chunk;
-				});
-
-				res.on('end', () => {
-					try {
-						const response = JSON.parse(data);
-						if (response.success) {
-							resolve(response.data);
-						} else {
-							reject(new Error(response.message));
-						}
-					} catch (err) {
-						reject(err);
-					}
-				});
+			res.on('data', chunk => {
+				data += chunk;
 			});
 
-			req.on('error', err => {
-				reject(err);
+			res.on('end', () => {
+				try {
+					const response = JSON.parse(data);
+					resolve(response);
+				} catch (err) {
+					reject(err);
+				}
 			});
-
-			req.end();
 		});
-	},
+
+		req.on('error', err => {
+			reject(err);
+		});
+
+		req.end();
+	});
+}
+
+// Export the makeRequest function for external use.
+module.exports = {
+	get: makeRequest,
 };
