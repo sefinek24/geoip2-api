@@ -32,9 +32,13 @@ console.log(data);
 </div>
 
 
+# 💙 Support
+For any questions or issues related to the script, please visit the [GitHub repository](https://github.com/sefinek24/geoip2-api) for the latest updates and support.
+
+If you like this module, please star the repository.
+
+
 # 🔑 License MIT
 This GeoIP API client script is provided under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
-For any questions or issues related to the script, please visit the [GitHub repository](https://github.com/sefinek24/geoip2-api) for the latest updates and support.
 
 Copyright 2023 © by [Sefinek](https://sefinek.net). All Rights Reserved.
