@@ -1,4 +1,4 @@
-# 🗺️ GeoIP API Wrapper
+# 🗺️ GeoIP Lite 2: API Wrapper
 <a href="https://www.npmjs.com/package/geoip2-api" target="_blank" title="geoip2-api - npm" style="text-decoration:none">
     <img src="https://img.shields.io/npm/dt/geoip2-api?maxAge=3600" alt="The number of downloads">
     <img src="https://img.shields.io/github/last-commit/sefinek24/geoip2-api" alt="Last commit">
