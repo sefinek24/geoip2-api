@@ -7,24 +7,29 @@
     <img src="https://img.shields.io/github/languages/code-size/sefinek24/geolite2-api" alt="Code size">
 </a>
 
+
 # 📥 Installation
 ```bash
 npm install geolite2-api
 ```
 
+
 # 📝 Information
 This documentation provides information about the lightweight Node.js module designed for sending requests to a geolocation data API. This module enables you to retrieve location information for a specified IP address and takes full advantage of native modules. The [official API](https://api.sefinek.net/docs/v2) is thoroughly optimized and secure.
+
 
 # 🤔 Importing
 ```js
 const geoIp = require('geolite2-api');
 ```
 
+
 # 😎 Usage
 ```js
 const data = await geoIp.get('109.207.159.255');
 console.log(data);
 ```
+
 
 # 🔑 License MIT
 This GeoIP API client script is provided under the MIT License. See the [LICENSE](LICENSE) file for more details.
