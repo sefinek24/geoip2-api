@@ -27,6 +27,12 @@
   "directories": {
     "test": "test"
   },
+  "files": [
+    "test/",
+    "example.js",
+    "index.d.ts",
+    "index.js"
+  ],
   "scripts": {
     "test": "jest test",
     "up": "ncu -u && npm install && npm update && npm audit fix"
