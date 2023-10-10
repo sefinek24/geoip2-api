@@ -27,7 +27,7 @@ const headers = {
  * @param {string} ip - The IP address for which to retrieve location information.
  * @returns {Promise<Object>} - A promise that resolves to the location data or rejects with an error.
  */
-function makeRequest(ip) {
+const makeRequest = ip => {
 	return new Promise((resolve, reject) => {
 		const options = {
 			hostname: API_BASE_URL,
@@ -58,7 +58,7 @@ function makeRequest(ip) {
 
 		req.end();
 	});
-}
+};
 
 // Export the makeRequest function for external use.
 module.exports = { get: makeRequest };
