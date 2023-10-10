@@ -1,10 +1,13 @@
-# 🗺️ GeoIP Lite 2: API Wrapper
-
-[![The number of downloads](https://img.shields.io/npm/dt/geoip2-api?maxAge=3600)](https://www.npmjs.com/package/geoip2-api)
-[![Last commit](https://img.shields.io/github/last-commit/sefinek24/geoip2-api)](https://github.com/sefinek24/geoip2-api)
-[![Issues](https://img.shields.io/github/issues/sefinek24/geoip2-api)](https://github.com/sefinek24/geoip2-api)
-[![Commit activity](https://img.shields.io/github/commit-activity/w/sefinek24/geoip2-api)](https://github.com/sefinek24/geoip2-api)
-[![Code size](https://img.shields.io/github/languages/code-size/sefinek24/geoip2-api)](https://github.com/sefinek24/geoip2-api)
+<div align="center">
+    <h1>🗺️ GeoIP Lite 2: API Wrapper</h1>
+    <a href="https://www.npmjs.com/package/geoip2-api">
+        <img src="https://img.shields.io/npm/dt/geoip2-api?maxAge=3600" alt="The number of downloads">
+        <img src="https://img.shields.io/github/last-commit/sefinek24/geoip2-api" alt="Last commit">
+        <img src="https://img.shields.io/github/issues/sefinek24/geoip2-api" alt="Issues">
+        <img src="https://img.shields.io/github/commit-activity/w/sefinek24/geoip2-api" alt="Commit activity">
+        <img src="https://img.shields.io/github/languages/code-size/sefinek24/geoip2-api" alt="Code size">
+    </a>
+</div>
 
 
 ## 📝 Information
