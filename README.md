@@ -11,13 +11,16 @@
 
 
 ## 📝 Information
-This documentation provides information about the lightweight Node.js module designed for sending requests to a geolocation data API. This module enables you to retrieve location information for a specified IP address and takes full advantage of native modules. The [official API](https://api.sefinek.net/docs/v2) is thoroughly optimized and secure.
+This documentation provides information about the lightweight Node.js module designed for sending requests to a geolocation data API.
+This module enables you to retrieve location information for a specified IP address and takes full advantage of native modules.
+The [official API](https://api.sefinek.net/docs/v2) is thoroughly optimized ⚡ and secure.
 
 > We use the [MaxMind](https://www.maxmind.com) database, which is automatically updated daily.
 
 
 ## 💻 Locally
-There is an alternative to this module that allows for local geolocation retrieval based on a specific IP address. However, this will increase the memory usage because the alternative module stores the MaxMind database in RAM.
+There is an alternative to this module that allows for local geolocation retrieval based on a specific IP address.
+However, this will increase the memory usage because the alternative module stores the MaxMind database in RAM.
 
 > [geoip-lite2 on npm](https://www.npmjs.com/package/geoip-lite2)
 
@@ -66,7 +69,7 @@ console.log(data);
 ## 💙 Support
 For any questions or issues related to the script, please visit the [GitHub repository](https://github.com/sefinek24/geoip2-api) for the latest updates and support.
 
-If you like this module, please star the repository.
+If you like this module, please **star** ⭐ the repository.
 
 
 ## 🔑 MIT License
