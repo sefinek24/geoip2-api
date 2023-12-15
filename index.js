@@ -1,4 +1,4 @@
-const https = require('node:https');
+const https = require('https');
 const { name, version, devDependencies } = require('./package.json');
 
 // Define the base URL and API path for the GeoIP service.
