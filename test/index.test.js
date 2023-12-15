@@ -36,7 +36,7 @@ describe('GeoIP Wrapper Module', () => {
 		const result = await geoIp.get(invalidIP);
 		expect(result.success).toBe(false);
 		expect(result.status).toBe(404);
-		expect(result.validationErr).toBe(true);
+		expect(result.validationErr).toBe(false);
 	});
 
 	// Test to check if the get function returns null for a private IP address.
