@@ -35,7 +35,7 @@ describe('GeoIP Wrapper Module', () => {
 
 		const result = await geoIp.get(invalidIP);
 		expect(result.success).toBe(false);
-		expect(result.status).toBe(400);
+		expect(result.status).toBe(404);
 		expect(result.validationErr).toBe(true);
 	});
 
