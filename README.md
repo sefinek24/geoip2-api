@@ -15,7 +15,8 @@ This documentation provides information about the lightweight Node.js module des
 This module enables you to retrieve location information for a specified IP address and takes full advantage of native modules.
 The [official API](https://api.sefinek.net/docs/v2) is thoroughly optimized ⚡ and secure.
 
-> We use the [MaxMind](https://www.maxmind.com) database, which is automatically updated daily.
+> We use the [MaxMind database](https://www.maxmind.com) in the [geoip-lite2](https://github.com/sefinek24/geoip-lite2) module for our API.
+> Due to certain limitations, the database is not updated daily (and never will be) by the module's developer. Updates are issued periodically.
 
 
 ## 💻 Locally
