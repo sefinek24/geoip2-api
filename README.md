@@ -33,10 +33,12 @@ npm install geoip2-api
 
 ## 😎 Usage
 ```js
-const geoIp = require("geoip2-api");
+const geoIp = require('geoip2-api');
 
-const data = await geoIp.get("185.244.214.231");
-console.log(data);
+(async () => {
+    const data = await geoIp.get('185.244.214.231');
+    console.log(data);
+});
 ```
 <div align="center">
     <a href="example.js">Open example.js >></a>
