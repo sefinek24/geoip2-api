@@ -34,4 +34,14 @@ declare module 'geoip2-api' {
      * @returns {Promise<Object>} - A promise that resolves to the location data or rejects with an error.
      */
     export function get(ip: string): Promise<ApiResponse>;
+
+    /**
+     * Represents the version number of the `geoip2-api` module.
+     * This property contains a string that specifies the current version of the module,
+     * conforming to the Semantic Versioning (SemVer) standard.
+     *
+     * @example console.log(geoIp.version); // Displays e.g. '1.0.0'
+     * @return The current version of the module.
+     */
+    export const version: string;
 }

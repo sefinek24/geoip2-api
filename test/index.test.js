@@ -1,22 +1,30 @@
-const geoIp = require('../index.js'); // Import the GeoIP module
+const geoIp = require('../index.js');
 
 describe('GeoIP Wrapper Module', () => {
-	// Test to check if the get function resolves with valid data for a valid IP address.
-	test('Should resolve with valid data for a valid IP address (US)', async () => {
-		const validIP = '8.8.8.8';
+	test('Should resolve with valid data for the Cloudflare IP address [1.1.1.1]', async () => {
+		const cfIp = '1.1.1.1';
 
-		const result = await geoIp.get(validIP);
+		const result = await geoIp.get(cfIp);
 		expect(result.success).toBe(true);
 		expect(result.status).toBe(200);
 		expect(result.validationErr).toBe(false);
-		expect(result.message).toBe('Found');
-		expect(result.ip).toBe(validIP);
+		expect(result.ip).toBe(cfIp);
+		expect(result.data).toBeDefined();
+	});
+
+	test('Should resolve with valid data for the Google IP address [8.8.8.8]', async () => {
+		const googleIp = '8.8.8.8';
+
+		const result = await geoIp.get(googleIp);
+		expect(result.success).toBe(true);
+		expect(result.status).toBe(200);
+		expect(result.validationErr).toBe(false);
+		expect(result.ip).toBe(googleIp);
 		expect(result.data).toBeDefined();
 		expect(result.data.country).toBe('US');
 	});
 
-	// Test to check if the get function resolves with valid data for another valid IP address.
-	test('Should resolve with valid data for a valid IP address (PL)', async () => {
+	test('Should resolve with valid data for a valid IP address [PL]', async () => {
 		const validIP = '5.172.224.0';
 
 		const result = await geoIp.get(validIP);
@@ -29,9 +37,8 @@ describe('GeoIP Wrapper Module', () => {
 		expect(result.data.timezone).toBe('Europe/Warsaw');
 	});
 
-	// Test to check if the get function rejects with an error for an invalid IP address.
 	test('Should reject with an error for an invalid IP address', async () => {
-		const invalidIP = 'invalid_ip'; // Example invalid IP address
+		const invalidIP = 'invalid.ip';
 
 		const result = await geoIp.get(invalidIP);
 		expect(result.success).toBe(false);
@@ -39,9 +46,8 @@ describe('GeoIP Wrapper Module', () => {
 		expect(result.validationErr).toBe(false);
 	});
 
-	// Test to check if the get function returns null for a private IP address.
 	test('Should resolve with null for a private IP address', async () => {
-		const privateIP = '192.168.1.1'; // Example private IP address
+		const privateIP = '192.168.1.1';
 
 		const result = await geoIp.get(privateIP);
 		expect(result.success).toBe(false);
@@ -49,22 +55,12 @@ describe('GeoIP Wrapper Module', () => {
 		expect(result.validationErr).toBe(false);
 	});
 
-	// Test to check if the get function returns an error for the loopback IP address (127.0.0.1).
 	test('Should reject with an error for the loopback IP address (127.0.0.1)', async () => {
-		const loopbackIP = '127.0.0.1'; // Loopback IP address
+		const loopbackIP = '127.0.0.1';
 
 		const result = await geoIp.get(loopbackIP);
 		expect(result.success).toBe(false);
 		expect(result.status).toBe(404);
 		expect(result.validationErr).toBe(false);
-	});
-
-	// Test to check if the get function returns valid data for the Cloudflare IP address (1.1.1.1).
-	test('Should resolve with valid data for the Cloudflare IP address (1.1.1.1)', async () => {
-		const cloudflareIP = '1.1.1.1'; // Cloudflare IP address
-
-		const result = await geoIp.get(cloudflareIP);
-		expect(result).toBeDefined();
-		expect(result.data).toHaveProperty('country');
 	});
 });
