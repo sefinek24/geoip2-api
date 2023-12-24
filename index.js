@@ -21,12 +21,6 @@ const headers = {
 	'X-XSS-Protection': '1; mode=block',
 };
 
-/**
- * Function to make a GeoIP API request.
- *
- * @param {string} ip - The IP address for which to retrieve location information.
- * @returns {Promise<Object>} - A promise that resolves to the location data or rejects with an error.
- */
 const makeRequest = ip => {
 	return new Promise((resolve, reject) => {
 		const options = {
