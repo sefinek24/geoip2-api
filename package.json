@@ -23,7 +23,7 @@
   "license": "MIT",
   "author": "Sefinek <contact@sefinek.net> (https://sefinek.net)",
   "main": "index.js",
-  "types": "index.d.ts",
+  "typings": "index.d.ts",
   "directories": {
     "test": "test"
   },
