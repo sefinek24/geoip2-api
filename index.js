@@ -37,7 +37,7 @@ const makeRequest = ip => {
 		});
 
 		req.on('error', reject);
-		req.setTimeout(9000, () => {
+		req.setTimeout(7500, () => {
 			req.destroy();
 			reject(new Error('Timeout error'));
 		});
