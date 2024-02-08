@@ -30,8 +30,8 @@ const makeRequest = ip => {
 				try {
 					const data = Buffer.concat(chunks).toString();
 					resolve(JSON.parse(data));
-				} catch (error) {
-					reject(error);
+				} catch (err) {
+					reject(err);
 				}
 			});
 		});
