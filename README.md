@@ -78,4 +78,4 @@ If you like this module, please **star** ⭐ the repository.
 ## 🔑 MIT License
 This GeoIP API client script is provided under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-Copyright 2023 © by [Sefinek](https://sefinek.net). All Rights Reserved.
+Copyright 2023-2024 © by [Sefinek](https://sefinek.net). All Rights Reserved.
