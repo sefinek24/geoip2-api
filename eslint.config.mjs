@@ -9,10 +9,7 @@ export default [
 			ecmaVersion: 2024,
 			globals: {
 				...globals.node,
-				...globals.es2021,
-				...globals.commonjs,
-				...globals.mongo,
-				...globals.browser,
+				...globals.es2021
 			}
 		},
 		rules: {
