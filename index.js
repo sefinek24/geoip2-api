@@ -13,7 +13,7 @@ const headers = {
 	'Referrer-Policy': 'strict-origin-when-cross-origin',
 	'X-Content-Type-Options': 'nosniff',
 	'X-Frame-Options': 'DENY',
-	'X-XSS-Protection': '1; mode=block',
+	'X-XSS-Protection': '1; mode=block'
 };
 
 // Main function with timeout
