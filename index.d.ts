@@ -30,8 +30,8 @@ declare module 'geoip2-api' {
      * (async () => {
      *     const data = await geoIp.get('185.244.214.231');
      *     console.log(data);
-     * });
-     * @returns {Promise<Object>} - A promise that resolves to the location data or rejects with an error.
+     * })();
+     * @returns {Promise<ApiResponse>} - A promise that resolves to the location data or rejects with an error.
      */
     export function get(ip: string): Promise<ApiResponse>;
 
@@ -41,7 +41,7 @@ declare module 'geoip2-api' {
      * conforming to the Semantic Versioning (SemVer) standard.
      *
      * @example console.log(geoIp.version); // Displays e.g. '1.0.0'
-     * @return The current version of the module.
+     * @returns {string} The current version of the module.
      */
     export const version: string;
 }
