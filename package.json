@@ -1,6 +1,6 @@
 {
   "name": "geoip2-api",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "This module enables you to retrieve the customer's geolocation using their IP address, utilizing data obtained from an official and high-speed API.",
   "keywords": [
     "geo-api",
@@ -29,9 +29,8 @@
     "up": "ncu -u && npm install && npm update && npm audit fix"
   },
   "devDependencies": {
-    "@eslint/js": "^9.3.0",
-    "eslint": "^9.3.0",
-    "globals": "^15.3.0",
+    "@eslint/js": "^9.5.0",
+    "globals": "^15.6.0",
     "jest": "^29.7.0"
   }
 }
