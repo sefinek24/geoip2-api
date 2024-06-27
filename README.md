@@ -11,6 +11,8 @@
 
 
 ## 📝 Information
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fsefinek24%2Fgeoip2-api.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fsefinek24%2Fgeoip2-api?ref=badge_shield)
+
 This documentation provides information about the lightweight Node.js module designed for sending requests to a geolocation data API.
 This module enables you to retrieve location information for a specified IP address and takes full advantage of native modules.
 The [official API](https://api.sefinek.net/docs/v2) is thoroughly optimized ⚡ and secure 🔐.
@@ -79,3 +81,5 @@ If you like this module, please **star** ⭐ the repository.
 This GeoIP API client script is provided under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 Copyright 2023-2024 © by [Sefinek](https://sefinek.net). All Rights Reserved.
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fsefinek24%2Fgeoip2-api.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fsefinek24%2Fgeoip2-api?ref=badge_large)
