@@ -32,7 +32,7 @@ npm install geoip2-api
 ```
 
 
-## 😎 Usage
+## 😎 Example
 ```js
 const geoIp = require('geoip2-api');
 
