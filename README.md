@@ -70,6 +70,10 @@ const geoIp = require('geoip2-api');
 ```
 
 
+## 🌠 API Tip
+If you want to get the client's geolocation, instead of providing an IP, use `/api/v2/geoip/myip`.
+
+
 ## 💙 Support
 For any questions or issues related to the script, please visit the [GitHub repository](https://github.com/sefinek24/geoip2-api) for the latest updates and support.
 
