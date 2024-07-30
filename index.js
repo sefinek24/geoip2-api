@@ -13,7 +13,7 @@ const headers = {
 
 // Makes a GET request to the GeoIP API and returns the response
 const makeRequest = ip => new Promise((resolve, reject) => {
-	const req = https.get(`https://api.sefinek.net/api/v2/geoip/${ip}`, { headers }, res => {
+	const req = https.get(`https://api.sefinek.net/api/v2/geoip/${ip}`, { headers, timeout: 20000 }, res => {
 		if ((res.statusCode < 200 || res.statusCode >= 300) && res.statusCode !== 400) {
 			return reject(new Error(`HTTP Status Code: ${res.statusCode}`));
 		}
