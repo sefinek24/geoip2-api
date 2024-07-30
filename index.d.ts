@@ -15,7 +15,7 @@ declare module 'geoip2-api' {
         success: boolean;
         status: number;
         validationErr: boolean;
-        message: string;
+        message?: string;
         ip: string;
         data: GeoIpData;
     }
