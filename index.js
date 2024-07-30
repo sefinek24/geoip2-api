@@ -11,7 +11,7 @@ const headers = {
 	'DNT': '1'
 };
 
-// Makes a GET request to the GeoIP API and returns the response
+// Sends a GET request to the Sefinek API and returns the response
 const makeRequest = ip => new Promise((resolve, reject) => {
 	const req = https.get(`https://api.sefinek.net/api/v2/geoip/${ip}`, { headers, timeout: 20000 }, res => {
 		if ((res.statusCode < 200 || res.statusCode >= 300) && res.statusCode !== 400) {
@@ -37,5 +37,5 @@ const makeRequest = ip => new Promise((resolve, reject) => {
 	});
 });
 
-// Exports the makeRequest function and version for external use
+// Exports the makeRequest function and the module version for external use
 module.exports = { get: makeRequest, version };
