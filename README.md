@@ -13,7 +13,7 @@
 ## 📝 Information
 This documentation provides information about the lightweight Node.js module designed for sending requests to a geolocation data API.
 This module enables you to retrieve location information for a specified IP address and takes full advantage of native modules.
-The [official API](https://api.sefinek.net/docs/v2) is thoroughly optimized ⚡ and secure 🔐.
+The [official API](https://api.sefinek.net) is thoroughly optimized ⚡ and secure 🔐.
 
 > We use the [MaxMind database](https://www.maxmind.com) in the [geoip-lite2](https://github.com/sefinek24/geoip-lite2) module for [our API](https://api.sefinek.net/docs/v2).
 > Due to certain limitations, the database is not updated daily (and never will be) by the module's developer. Updates are issued periodically.
@@ -52,16 +52,15 @@ const geoIp = require('geoip2-api');
   "success": true,
   "status": 200,
   "validationErr": false,
-  "message": "Found",
   "ip": "185.244.214.231",
   "data": {
-    "range": [ 3119830528, 3119830783 ],
+    "range": [3119830528, 3119830783],
     "country": "PL",
     "region": "14",
     "eu": "1",
     "timezone": "Europe/Warsaw",
     "city": "Warsaw",
-    "ll": [ 52.1574, 21.0126 ],
+    "ll": [52.1574, 21.0126],
     "metro": 0,
     "area": 20
   }
