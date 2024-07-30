@@ -47,6 +47,8 @@ const geoIp = require('geoip2-api');
 
 
 ## ✨ Output
+> GET https://api.sefinek.net/api/v2/geoip/185.244.214.231
+
 ```json
 {
   "success": true,
