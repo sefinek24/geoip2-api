@@ -44,7 +44,7 @@ describe('GeoIP Wrapper Module', () => {
 			await geoIp.get(invalidIP);
 		} catch (result) {
 			expect(result).toBeDefined();
-			expect(result.message).toBe('HTTP Status Code: 404');
+			expect(result.message).toBe('HTTP Status Code: 400');
 		}
 	});
 
@@ -64,7 +64,7 @@ describe('GeoIP Wrapper Module', () => {
 			await geoIp.get(loopbackIP);
 		} catch (result) {
 			expect(result).toBeDefined();
-			expect(result.message).toBe('HTTP Status Code: 404');
+			expect(result.message).toBe('HTTP Status Code: 400');
 		}
 	});
 
@@ -87,7 +87,7 @@ describe('GeoIP Wrapper Module', () => {
 			await geoIp.get(malformedIP);
 		} catch (result) {
 			expect(result).toBeDefined();
-			expect(result.message).toBe('HTTP Status Code: 404');
+			expect(result.message).toBe('HTTP Status Code: 400');
 		}
 	});
 });
