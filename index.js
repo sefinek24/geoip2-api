@@ -5,15 +5,10 @@ const { name, version, devDependencies } = require('./package.json');
 const headers = {
 	'User-Agent': `${name}/${version} (+https://github.com/sefinek24/geoip2-api)${process.env.JEST_WORKER_ID ? ` jest/${devDependencies.jest.replace(/^[^0-9]*/, '')}` : ''}`,
 	'Accept': 'application/json',
+	'Content-Type': 'application/json',
 	'Cache-Control': 'no-cache',
-	'CF-Visitor': '{"scheme":"https"}',
 	'Connection': 'keep-alive',
-	'DNT': '1',
-	'Pragma': 'no-cache',
-	'Referrer-Policy': 'strict-origin-when-cross-origin',
-	'X-Content-Type-Options': 'nosniff',
-	'X-Frame-Options': 'DENY',
-	'X-XSS-Protection': '1; mode=block'
+	'DNT': '1'
 };
 
 // Makes a GET request to the GeoIP API and returns the response
