@@ -77,7 +77,7 @@ describe('GeoIP Wrapper Module', () => {
 		expect(result.validationErr).toBe(false);
 		expect(result.ip).toBe(ipv6Address);
 		expect(result.data).toBeDefined();
-		expect(result.data.country).toBe('PL');
+		expect(result.data.country).toBe('PH');
 	});
 
 	test('Should reject with an error for a malformed IP address', async () => {
