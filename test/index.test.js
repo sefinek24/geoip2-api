@@ -68,14 +68,14 @@ describe('GeoIP Wrapper Module', () => {
 		}
 	});
 
-	test('Should resolve with valid data for an IPv6 address [2606:4700:4700::1111]', async () => {
-		const ipv6Address = '2606:4700:4700::1111';
+	test('Should resolve with valid data for an IPv4 address [104.113.255.255]', async () => {
+		const ipv4Address = '104.113.255.255';
 
-		const result = await geoIp.get(ipv6Address);
+		const result = await geoIp.get(ipv4Address);
 		expect(result.success).toBe(true);
 		expect(result.status).toBe(200);
 		expect(result.validationErr).toBe(false);
-		expect(result.ip).toBe(ipv6Address);
+		expect(result.ip).toBe(ipv4Address);
 		expect(result.data).toBeDefined();
 		expect(result.data.country).toBe('PL');
 	});
